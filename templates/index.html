@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+
+    <th>id</th>
+    <th>player</th>
+    <th>points</th>
+      <th>rank</th>
+      <th>season</th>
+  </tr>
+{% for i in stap %}
+  <tr>
+
+    <td>{{i.id}}</td>
+    <td>{{i.players}}</td>
+    <td>{{i.points}}</td>
+      <td>{{i.rank}}</td>
+       <td>{{i.season}}</td>
+
+  </tr>
+ {% endfor %}
+</table>
+</body>
+</html>
